@@ -33,7 +33,7 @@ The framework integrates:
 2. Spatial transmission structure
 * Farms interact via a distance-decay kernel:
   
- $$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
+  $$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
 ​
 * Captures localized clustering and long-range spread
 
@@ -49,3 +49,28 @@ $$f(\psi) = \frac{\psi}{ (1+ \kappa \psi)}$$
 The model derives a latency-dependent reproduction number:
 
  $$R_0(\tau) = \frac{\beta}{\gamma} (1+e^{-\gamma \tau}) + e^{-\gamma \tau}$$
+
+ 5. Decision-theoretic surveillance
+
+A full Bayesian decision framework is implemented to compute:
+
+* Optimal sampling effort $𝑛$
+* Expected Net Gain of Sampling (ENGS)
+* Trade-offs between:
+* Epidemiological risk
+* Economic cost
+* Detection uncertainty
+
+📂 Repository Structure
+
+```bash
+.
+├── main_model.R            # Core DDE simulation
+├── /data/                  # Input or generated datasets
+├── /outputs/               # Simulation outputs
+├── /figures/               # Figures for manuscript
+├── /spatial/               # GIS-related scripts
+├── /sensitivity/           # Global sensitivity analysis
+├── /optimization/          # Decision-theoretic sampling
+└── README.md
+```
