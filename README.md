@@ -39,6 +39,6 @@ $$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
 
   3. Behavioral recruitment
 * Nonlinear farmer response:
-$$ f(\psi) = \frac{\psi}{ (1+ \kappa \psi)} $$
+$$f(\psi) = \frac{\psi}{ (1+ \kappa \psi)}$$
 
 * Models adaptive planting under perceived infection risk
