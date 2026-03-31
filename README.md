@@ -74,3 +74,29 @@ A full Bayesian decision framework is implemented to compute:
 ├── /optimization/          # Decision-theoretic sampling
 └── README.md
 ```
+
+▶️ Running the Code
+
+1️⃣ Install dependencies
+
+```R
+install.packages(c(
+  "deSolve",
+  "tidyverse",
+  "reshape2",
+  "lhs",
+  "sensitivity",
+  "sf",
+  "gstat",
+  "geodata",
+  "viridis",
+  "patchwork",
+  "ggspatial",
+  "extraDistr"
+))
+```
+2️⃣ Run simulation
+
+```R
+source("main_model.R")
+```
