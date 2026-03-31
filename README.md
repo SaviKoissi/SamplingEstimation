@@ -33,7 +33,7 @@ The framework integrates:
 2. Spatial transmission structure
 * Farms interact via a distance-decay kernel:
   
-$$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
+ $$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
 ​
 * Captures localized clustering and long-range spread
 
@@ -48,4 +48,4 @@ $$f(\psi) = \frac{\psi}{ (1+ \kappa \psi)}$$
 
 The model derives a latency-dependent reproduction number:
 
-$R_0(\tau) = \frac{\beta}{\gamma} (1+e^{-\gamma \tau}) + e^{-\gamma \tau}$
+ $$R_0(\tau) = \frac{\beta}{\gamma} (1+e^{-\gamma \tau}) + e^{-\gamma \tau}$$
