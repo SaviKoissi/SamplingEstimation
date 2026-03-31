@@ -1,4 +1,4 @@
-** Project Title: Optimal Field Sampling Framework for Disease Surveillance of Clonally Propagated Plants**
+**Project Title: Optimal Field Sampling Framework for Disease Surveillance of Clonally Propagated Plants**
 
 📖 Associated Manuscripts
 
@@ -36,3 +36,9 @@ The framework integrates:
 $$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
 ​
 * Captures localized clustering and long-range spread
+
+  3. Behavioral recruitment
+* Nonlinear farmer response:
+$$ f(\psi) = \frac{\psi}{ (1+ \kappa \psi)} $$
+
+* Models adaptive planting under perceived infection risk
