@@ -37,7 +37,7 @@ The framework integrates:
 ​
 * Captures localized clustering and long-range spread
 
-  3. Behavioral recruitment
+3. Behavioral recruitment
 * Nonlinear farmer response:
   
 $$f(\psi) = \frac{\psi}{ (1+ \kappa \psi)}$$
