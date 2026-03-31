@@ -32,5 +32,7 @@ The framework integrates:
 
 2. Spatial transmission structure
 * Farms interact via a distance-decay kernel:
-$$ 𝑊_ij = 𝑒^{- \gamma D_ij} $$​
+  
+$$𝑊_ij = 𝑒^{- \gamma D_ij}$$
+​
 * Captures localized clustering and long-range spread
