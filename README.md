@@ -29,3 +29,8 @@ The framework integrates:
 * Explicit latency ($\tau$) modeled via true delay differential equations
 * Survival-adjusted progression using exponential decay
 * Demonstrates non-trivial impact of latency on epidemic growth and detectability
+
+2. Spatial transmission structure
+* Farms interact via a distance-decay kernel:
+$$ 𝑊_ij = 𝑒^{- \gamma D_ij} $$​
+* Captures localized clustering and long-range spread
