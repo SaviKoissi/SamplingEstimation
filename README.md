@@ -39,6 +39,13 @@ $$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
 
   3. Behavioral recruitment
 * Nonlinear farmer response:
+  
 $$f(\psi) = \frac{\psi}{ (1+ \kappa \psi)}$$
 
 * Models adaptive planting under perceived infection risk
+
+4. Analytical reproduction number
+
+The model derives a latency-dependent reproduction number:
+
+$R_0(\tau) = \frac{\beta}{\gamma} (1+e^{-\gamma \tau}) + e^{-\gamma \tau}$
