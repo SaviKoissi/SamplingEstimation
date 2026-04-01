@@ -1,6 +1,6 @@
-\h5 <Project Title: Optimal Field Sampling Framework for Disease Surveillance of Clonally Propagated Plants>
-
-📖 Associated Manuscripts
+# Project Title: Optimal Field Sampling Framework for Disease Surveillance of Clonally Propagated Plants
+<u> </u>
+## 📖 Associated Manuscripts
 
 This repository accompanies:
 
@@ -9,7 +9,7 @@ This repository accompanies:
 “Spatial dynamics and decision-theoretic surveillance in vegetatively propagated crops”
 https://www.biorxiv.org/content/10.64898/2025.12.09.693344v1
 
-🎯 Overview
+## 🎯 Overview
 
 This repository implements a mechanistic, spatially explicit Delay Differential Equation (DDE) model for pathogen dynamics in vegetatively propagated crops.
 
@@ -23,34 +23,37 @@ The framework integrates:
 * ⚖️ Exact population conservation
 * 📊 Decision-theoretic optimization of surveillance effort
 
-🧠 Key Scientific Contributions
-1. Delay-driven epidemic dynamics
+## 🧠 Key Scientific Contributions
+
+### 1. Delay-driven epidemic dynamics
 
 * Explicit latency ($\tau$) modeled via true delay differential equations
 * Survival-adjusted progression using exponential decay
 * Demonstrates non-trivial impact of latency on epidemic growth and detectability
 
-2. Spatial transmission structure
+### 2. Spatial transmission structure
+
 * Farms interact via a distance-decay kernel:
   
   $$𝑊_{ij} = 𝑒^{- \gamma D_{ij}}$$
 ​
 * Captures localized clustering and long-range spread
 
-3. Behavioral recruitment
+### 3. Behavioral recruitment
+
 * Nonlinear farmer response:
   
 $$f(\psi) = \frac{\psi}{ (1+ \kappa \psi)}$$
 
 * Models adaptive planting under perceived infection risk
 
-4. Analytical reproduction number
+### 4. Analytical reproduction number
 
 The model derives a latency-dependent reproduction number:
 
  $$R_0(\tau) = \frac{\beta}{\gamma} (1+e^{-\gamma \tau}) + e^{-\gamma \tau}$$
 
- 5. Decision-theoretic surveillance
+### 5. Decision-theoretic surveillance
 
 A full Bayesian decision framework is implemented to compute:
 
@@ -61,7 +64,7 @@ A full Bayesian decision framework is implemented to compute:
 * Economic cost
 * Detection uncertainty
 
-📂 Repository Structure
+## 📂 Repository Structure
 
 ```bash
 .
@@ -75,9 +78,9 @@ A full Bayesian decision framework is implemented to compute:
 └── README.md
 ```
 
-▶️ Running the Code
+### ▶️ Running the Code
 
-1️⃣ Install dependencies
+#### 1️⃣ Install dependencies
 
 ```R
 install.packages(c(
@@ -95,7 +98,7 @@ install.packages(c(
   "extraDistr"
 ))
 ```
-2️⃣ Run simulation
+#### 2️⃣ Run simulation
 
 ```R
 source("main_model.R")
