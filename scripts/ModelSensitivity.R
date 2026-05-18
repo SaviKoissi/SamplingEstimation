@@ -9,6 +9,8 @@ library(deSolve)
 library(tidyverse)
 library(viridis)
 library(patchwork)
+library(dplyr)
+library(purrr)
 
 # ==============================================================================
 # 1. BIOLOGICAL ENGINE (DDE)
@@ -127,20 +129,6 @@ find_optimal_policy <- function(curr_theta, curr_phi, budget = 4000) {
       # Cost Logic: Fixed travel cost per farm + Variable test cost per farm
       Cost = n * C_travel + n * m * C_test
     ) %>%
-    # filter(Cost <= budget) %>%
-    # mutate(
-    #   # Probability of detection at a single farm
-    #   P_det_farm = 1 - (1 - p_eff)^m,
-    #   
-    #   # Expected Number of Detections (Utility of Information)
-    #   # This ensures that more detections = more value, preventing flatlines.
-    #   Expected_Detections = n * P_det_farm,
-    #   
-    #   # Responsive Value Function (Logarithmic diminishing returns)
-    #   Value = Max_Value * frontier_weight * log(1 + Expected_Detections),
-    #   
-    #   ENGS = Value - Cost
-    # ) %>%
     mutate(
       # 1. Cost Logic
       Cost = n * C_travel + n * m * C_test
@@ -163,10 +151,6 @@ find_optimal_policy <- function(curr_theta, curr_phi, budget = 4000) {
     slice(1)
 }
 
-#==============================================================================
-
-library(dplyr)
-library(purrr)
 
 # =========================================================
 # OPTIMAL SURVEILLANCE POLICY
@@ -386,9 +370,6 @@ print(final_table)
 
 
 
-
-
-
 # ==============================================================================
 # 3. BUDGET SENSITIVITY ANALYSIS
 # ==============================================================================
@@ -407,6 +388,7 @@ sensitivity_results <- map_df(test_budgets, function(b) {
   return(res)
 })
 opt_policy <- find_optimal_policy(curr_theta, curr_phi, budget = 4000)
+
 # ==============================================================================
 # 4. VISUALIZATION & OUTPUT
 # ==============================================================================
