@@ -47,11 +47,6 @@ $$f(\psi) = \frac{\psi}{ (1+ \kappa \psi)}$$
 
 * Models adaptive planting under perceived infection risk
 
-### 4. Analytical reproduction number
-
-The model derives a latency-dependent reproduction number:
-
- $$R_0(\tau) = \frac{\beta}{\gamma} (1+e^{-\gamma \tau}) + e^{-\gamma \tau}$$
 
 ### 5. Decision-theoretic surveillance
 
@@ -68,13 +63,8 @@ A full Bayesian decision framework is implemented to compute:
 
 ```bash
 .
-├── main_model.R            # Core DDE simulation
-├── /data/                  # Input or generated datasets
-├── /outputs/               # Simulation outputs
-├── /figures/               # Figures for manuscript
-├── /spatial/               # GIS-related scripts
-├── /sensitivity/           # Global sensitivity analysis
-├── /optimization/          # Decision-theoretic sampling
+├── /scripts                # Core DDE simulation
+├── /data/                  # Input or generated datasets data are in the manuscript
 └── README.md
 ```
 
